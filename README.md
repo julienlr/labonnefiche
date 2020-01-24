@@ -5,15 +5,10 @@ Ce projet contient le programme permettant de lancer le site La Bonne Fiche.
 
 ## Auteurs
 
-COHORTE 3 Groupe B
-
-* **Alan Le Verge - INFO3 G3**
-*  **Thomas Vuillemin - INFO3 G3**
-*  **Julien Le Roux - INFO3 G2**
-*  **Guillaume Alves Da Motta Da Cruz - INFO3 G2**
-
-
-Pour voir la liste des contributeurs : [contributors](https://gitlab.univ-nantes.fr/webs6_grp3b/app-web-s6/graphs/master)
+*  **Julien Le Roux**
+* **Alan Le Verge**
+*  **Thomas Vuillemin**
+*  **Guillaume Alves Da Motta Da Cruz**
 
 
 ## Points d'entrée (API RESTFUL)
