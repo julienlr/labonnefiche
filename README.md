@@ -1,7 +1,6 @@
 # La Bonne Fiche
 
 Ce projet contient le programme permettant de lancer le site La Bonne Fiche.
-La Bonne fiche est le site correspondant au sujet 3 : Partage de notes de cours.
 
 
 ## Auteurs
@@ -88,14 +87,6 @@ Pour tester le projet sur le serveur :
 9. Pour supprimer A : pm2 delete A
 
 ```
-## Note importante
-
-La branche master ne marche pas sur le serveur de polytech. Nous avons donc créer une nouvelle branch (master_server) afin de modifier les fichiers pour que cela fonctionne sur le server.
-Le master ne fonctionne donc qu'en local et master_server sur le server polytech. Il est possible qu'il manque quelque fonctionnalité sur le server polytech.
-
-## Notre rapport de projet
-
-Pour avoir notre rapport de projet : [Rapport](https://gitlab.univ-nantes.fr/webs6_grp3b/app-web-s6/blob/master/Rapport_d_exp%C3%A9rience_d%C3%A9veloppement.pdf)
 
 ## Langages utilisés
 
