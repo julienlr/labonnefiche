@@ -1,0 +1,56 @@
+/* Zone de recherche */
+.search {
+	display: inline-block;
+	padding: 50px 30px;
+}
+
+.lesson {
+	width: 600px;
+	display: table;
+	background-color: white;
+	margin: 8px 0;
+	padding: 12px;
+	border: 1px solid #DDE2E6;
+	color: #4690D9;
+}
+
+.lesson:hover {
+	background-color: #D4E3EF;
+	border: 1px solid #C7D5E0;
+}
+
+.lesson:active {
+	background-color: #C7D5E0;
+}
+
+.lesson h3, .lesson p {
+	margin: 0;
+}
+
+.lesson-title {
+	font-size: 16px;
+}
+
+.lesson-text {
+	font-size: 14px;
+}
+
+.lesson-text--small {
+	font-size: 12px;
+}
+
+.lesson-icon {
+	display: table-cell;
+	height: 64px;
+	width: 64px;
+}
+
+.lesson-infos {
+	display: table-cell;
+	margin: 0;
+}
+
+.lesson-rating {
+	display: table-cell;
+	margin: 0;
+}

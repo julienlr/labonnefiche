@@ -1,0 +1,17 @@
+<div class="wrap">
+
+    {{>sidebar_online}}
+
+    <div class="container-fluid content">
+        <section class="text-center content-index">
+            <h1> La Bonne Fiche </h1>
+            <p> Retrouve des milliers de notes de cours, synthèses et autres documents pertinents sur ce site ! </p>
+            <form>
+                <label for="User">Search: </label>
+                <input type="text"  id="user" placeholder="'Maths trigonométrie', 'Histoire seconde guerre', ..." aria-describedby="inputGroupPrepend2">
+                <button id="submitAccueil" class="btn btn-info" type="submit">Rechercher<i class="fa fa-search"></i></button>
+            </form>
+            <button type="button" class="btn"><a href="/search_advanced">Recherche avancée</a></button> <!-- Retrait de classe btn-info ==> Remettre le :hover -->
+        </section>
+    </div>
+</div>

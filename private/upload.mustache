@@ -1,0 +1,105 @@
+<div class="wrap">
+
+    {{>sidebar_online}}
+
+    <!-- Pour le moment j'ai pas fusionné les formulaires, l'un est appelé à partir du click() de l'autre -->
+
+    <div class="container-fluid content">
+        <section id="content-upload" class="text-center">
+            <h2> Mettre en ligne </h2>
+                <div class="container cont">
+                    <img id="carre" src="public/images/carre.png" />
+                    <p> Déposez votre fiche (PDF, PNG ou JPG) de moins de 20Mo ici</p>
+                        <form id="upload_form" action="/fileupload" method="POST", enctype="multipart/form-data">
+                            <input id="upload_input" type="file" accept="image/png, image/jpeg, application/pdf, plain/text" value="">
+                </div>
+                <div class="form-row">
+                    <div class="my-2 col-md-4 offset-md-1">
+                        <div class="input-group firstInputGrpUpload">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text input-group--large"><i class="fas fa-cog"></i>Nom du fichier</span>
+                            </div>
+                            <input type="text" id="nom" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="my-2 col-md-4 offset-md-2">
+                        <div class="input-group firstInputGrpUpload">
+                            <div class="input-group-prepend">
+                                 <span class="input-group-text input-group--large"><i class="fas fa-info"></i>Type cours</span>
+                            </div>
+                            <select class="selectpicker form-control" id="type" required>
+                                <option selected>Choose...</option>
+                                <option value="1">informatique</option>
+                                <option value="2">materiaux</option>
+                                <option value="3">electricite</option>
+                                <option value="4">genie civil</option>
+                                <option value="5">maths</option>
+                                <option value="6">mecanique</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="my-2 col-md-4 offset-md-1">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                 <span class="input-group-text input-group--large"><i class="fas fa-university"></i>Ecole</span>
+                            </div>
+                            <select class="selectpicker form-control" id="ecole" required>
+                                <option selected>Choose...</option>
+                                <option value="1">Polytech</option>
+                                <option value="2">IMT</option>
+                                <option value="3">Ecole Design</option>
+                                <option value="4">Ecole Du Bois</option>
+                                <option value="5">Ecole Vétérinaire</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="my-2 col-md-3 offset-md-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text input-group--large"><i class="fas fa-check"></i>Note</span>
+                            </div>
+                            <select id="note" class="custom-select inputGroupSelect2" required>
+                                <option selected>Choose...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="mt-2 col-md-4 offset-md-1">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                 <span class="input-group-text input-group--large"><i class="fas fa-cog"></i>Format</span>
+                            </div>
+                            <select class="selectpicker form-control" id="format" required>
+                                <option selected>Choose...</option>
+                                <option value="1">.pdf</option>
+                                <option value="2">.txt</option>
+                                <option value="3">.c</option>
+                                <option value="4">.zip</option>
+                                <option value="5">.js</option>
+                                <option value="6">.sql</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-2 col-md-4 offset-md-2">
+                        <div class="input-group middleInputGroup">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text input-group--large"><i class="fas fa-clock"></i>Date</span>
+                            </div>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <button id="add" type="button" class="btn btnUpload">Ajouter le fichier<img src="public/images/baseline-cloud_upload-24px.svg" alt="Ajout fichier"/></button>
+            </form>
+        </section>
+    </div>
+
+</div>

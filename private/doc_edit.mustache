@@ -1,0 +1,72 @@
+<div class="wrap">
+
+    {{>sidebar_online}}
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="my-5 col-md-1 offset-md-1">
+                <a href = "../"><button id="fleche" type="button" class="btn btn-info"><i class="fas fa-arrow-left"></i></button></a>
+            </div>
+            <p id="text" class="my-5 col-md-10">
+            Mettre en ligne - Edition
+            </p>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--large"><i class="fas fa-quote-left"></i>Titre</span>
+                        </div>
+                        <input type="text" class="form-control" id="titre" placeholder="PHP - Les bases" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row ">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--large"><i class="fas fa-bars"></i>Catégorie(s)</span>
+                        </div>
+                        <input type="text" class="form-control formWithRightBtn" placeholder="Mathématiques" required>
+                        <button type="button" class="btn petitBtn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4">
+                    <button aria-label="Fermer" class = "croix" onclick="myDialog.close()">Informatique X</button>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group firstInputGroupEdition">
+                        <div class="input-group-prepend">
+                            <span  class="input-group-text input-group--large"><i class="fas fa-bars"></i>Tag(s)</span>
+                        </div>
+                        <input type="text" class="form-control formWithRightBtn" placeholder="Trigonométrie - Pythagore" required>
+                        <button type="button" class="btn petitBtn"><i class="fas fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="my-2 col-md-6">
+                    <button aria-label="Fermer" class = "croix" onclick="myDialog.close()">PHP X</button>
+                    <button aria-label="Fermer" class = "croix" onclick="myDialog.close()">Débutants X</button>
+                    <button aria-label="Fermer" class = "croix" onclick="myDialog.close()">Bases X</button>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--large"><i class="fas fa-globe-americas"></i>Ecole ou société</span>
+                        </div>
+                        <input type="text" class="form-control formWithRightBtn" placeholder="Polytech Nantes" required>
+                        <button type="button" class="btn btn-info"><i class="fas fa-question-circle"></i></button>
+                    </div>
+                    <span>Ecoles/sociétés existantes : </span>
+                    <span class = "ecoles">Polytech Nantes </span>
+                    <span class = "ecoles">Polytech Tours </span>
+                </div>
+            </div>
+            <button id="submitEdition" class="btn btn-primary" type="submit">Valider et mettre en ligne<i id = "valider" class="fas fa-check"></i></button>
+        </form>
+    </div>
+</div>

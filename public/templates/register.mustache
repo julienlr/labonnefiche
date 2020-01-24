@@ -1,0 +1,77 @@
+<div class="wrap">
+    
+    {{>sidebar_offline}}
+    
+    <div class="container-fluid content">
+        <div class="row">
+            <div id="text" class="mt-5 col-md-10">
+                S'inscrire
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-5" text-align="center">
+                {{#message}}<div class="alert alert-warning">{{message}}</div>{{/message}}
+            </div>
+        </div>
+        <form>
+
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Pseudo</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" required>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Email</span>
+                        </div>
+                        <input type="text" class="form-control" id="mail" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Nom</span>
+                        </div>
+                        <input type="text" class="form-control" id="nom" required>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span  class="input-group-text input-group--small">Mot de passe</span>
+                        </div>
+                        <input type="password" class="form-control" id="pwd1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Prénom</span>
+                        </div>
+                        <input type="text" class="form-control" id="prenom" required>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span  class="input-group-text input-group--small">Mot de passe</span>
+                        </div>
+                        <input type="password" class="form-control" id="pwd2" placeholder="réécrivez le mdp" required>
+                    </div>
+                </div>
+            </div>
+            <button id="sub-btn" class="btn btn-primary" type="button"><p>S'inscrire</p></button>
+        </form>
+    </div>
+
+</div>

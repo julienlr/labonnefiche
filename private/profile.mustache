@@ -1,0 +1,82 @@
+<div class="wrap">
+
+    {{>sidebar_online}}
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div id="text" class="mt-5 col-md-10">
+                Mon compte
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-5">
+                <img class="rounded-circle profile-image" src="public/images/profil.png" alt="Photo de profil"/>
+                <div class="rounded-circle container conteneur">
+                    <div class="text-center">
+                        <img id="crayon" src="public/images/crayon.svg" alt="Modif' photo de profil"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form>
+        {{#infos}}
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">PSEUDO</span>
+                        </div>
+                        <span class="form-control" id="titre"> {{pseudo}} </span>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">EMAIL</span>
+                        </div>
+                        <input type="text" class="form-control" id="mail" value="{{mail}}" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">NOM</span>
+                        </div>
+                        <input type="text" class="form-control" id="nom" value="{{nom}}" required>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span  class="input-group-text input-group--small">MOT DE PASSE</span>
+                        </div>
+                        <input type="password" class="form-control" id="pwd1" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row compteForm">
+                <div class="my-2 col-md-4 offset-md-1">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">PRENOM</span>
+                        </div>
+                        <input type="text" class="form-control" id="prenom" value="{{prenom}}" required>
+                    </div>
+                </div>
+                <div class="my-2 col-md-4 offset-md-1 right">
+                    <div class="input-group firstInputGroup">
+                        <div class="input-group-prepend">
+                            <span  class="input-group-text input-group--small">MOT DE PASSE</span>
+                        </div>
+                        <input type="password" class="form-control" id="pwd2" placeholder="réécrivez le mdp" required>
+                    </div>
+                </div>
+            </div>
+            <button id="submitCompte" class="btn btn-primary" type="button"><p>Enregistrer</p></button>
+        {{/infos}}
+        </form>
+    </div>
+
+</div>

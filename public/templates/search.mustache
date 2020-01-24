@@ -1,0 +1,43 @@
+<div class="wrap">
+
+    {{>sidebar_offline}}
+
+    <div class="container-fluid content">
+        <article class="search">
+            <div class="form-row">
+                <input id="input_search" type="text" value=""/>
+                <button id="submit_search" class="btn btn-primary" type="submit">Rechercher</button>
+            </div>
+            {{#lessons}}
+            <a class="lesson" href="/lesson/{{lesson_id}}">
+                <img class="lesson-icon" src="/public/images/doc_types/{{file_type}}.png" alt="lesson icon"/>
+                <div style="vertical-align: top; display: inline-block;">
+                    <h3 class="lesson-title">{{lesson_name}}</h3>
+                    <p class="lesson-text">Par {{prenom}} {{nom}}</p>
+                    <p class="lesson-text--small">Tags : {{tags}}</p> <!-- Not impl -->
+                </div>
+                <div style="float: right; display: inline-block; text-align:right;">
+                    <p style="margin: 0; font-size: 12px;">{{dateCours}}</p>
+                    <p>{{note}}/20</p>
+                </div>
+            </a>
+            {{/lessons}}
+        </article>
+    </div>
+
+</div>
+
+<!-- Icones types de fichiers : 
+     https://www.flaticon.com/packs/file-types
+-->
+
+<!-- Credits for images -->
+<!-- 
+    <div>Icons made by
+        <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        is licensed by
+        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+-->

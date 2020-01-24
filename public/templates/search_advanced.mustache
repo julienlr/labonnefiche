@@ -1,0 +1,104 @@
+<div class="wrap">
+
+    {{>sidebar_offline}}
+
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="my-5 col-md-1 offset-md-1">
+                <a href = "../"><button id="fleche" type="button" class="btn btn-info"><i class="fas fa-arrow-left"></i></button></a>
+            </div>
+            <div id="text" class="my-5 col-md-10">
+                Recherche avancée
+            </div>
+        </div>
+        <form>
+        <div class="form-row">
+            <div class="my-2 col-md-4 offset-md-1">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text input-group--large"><i class="fas fa-quote-left"></i>Mot(s) clé(s)</span>
+                    </div>
+                    <input type="text" class="form-control formWithRightBtn" placeholder="'Trigonométrie', 'JAVA'" required>
+                    <button type="button" class="btn petitBtn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="my-2 col-md-4">
+                <button aria-label="Fermer" class="croix" onclick="myDialog.close()">Seconde guerre mondiale X</button>
+                <button aria-label="Fermer" class="croix" onclick="myDialog.close()">1940 X</button>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="my-2 col-md-4 offset-md-1">
+                <div class="input-group firstInputGroupRecherche">
+                    <div class="input-group-prepend">
+                        <span  class="input-group-text input-group--large"><i class="fas fa-bars"></i>Catégorie(s)</span>
+                    </div>
+                    <input type="text" class="form-control formWithRightBtn" placeholder="Mathématiques" required>
+                    <button type="button" class="btn petitBtn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="my-2 col-md-6">
+                <button aria-label="Fermer" class="croix" onclick="myDialog.close()">Histoire X</button>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="my-2 col-md-4 offset-md-1">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                         <span class="input-group-text input-group--large"><i class="fas fa-clock"></i>Publication</span>
+                    </div>
+                    <select class="selectpicker form-control" id="inputGroupSelect1">
+                        <option selected>Choose...</option>
+                        <option value="1">Il y a plus d'un jour</option>
+                        <option value="2">Il y a plus d'une semaine</option>
+                        <option value="3">Il y a plus d'un mois</option>
+                        <option value="3">Il y a plus d'un an</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="my-2 col-md-4 offset-md-1">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text input-group--large"><i class="fa fa-user"></i>Auteur</span>
+                    </div>
+                    <input type="text" class="form-control formWithRightBtn" placeholder="Thierry Gaumont" required>
+                    <button type="button" class="btn btn-info"><i class="fas fa-exclamation-circle"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="my-2 col-md-4 offset-md-1">
+                <div class="input-group middleInputGroup">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text input-group--large"><i class="fas fa-globe-americas"></i>Ecole ou société</span>
+                    </div>
+                    <input type="text" class="form-control formWithRightBtn" placeholder="College Jean Pierre Michel Nantes" required>
+                    <button type="button" class="btn btn-info"><i class="fas fa-check-circle"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="my-2 col-md-3 offset-md-1">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text input-group--large"><i class="fas fa-heart"></i>Note minimale</span>
+                    </div>
+                    <select class="custom-select inputGroupSelect2">
+                        <option selected>Choose...</option>
+                        <option value="1">0</option>
+                        <option value="2">1</option>
+                        <option value="3">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button id="submit" class="btn btn-primary" type="submit">Rechercher<i id="rechercher" class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="wrap">
+
+    {{>sidebar_offline}}
+
+	<div class="container-fluid content">
+        <div class="row">
+            <div id="text" class="mt-5 col-md-10">
+                Se connecter
+            </div>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="my-2 col-md-4 offset-md-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Pseudo</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="username" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="my-2 col-md-4 offset-md-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group--small">Mot de passe</span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="password" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="my-5 col-md-2 offset-md-4">
+                        <div class="row remember">
+                            <!-- pas géré -->
+                            <input type="checkbox"><span>Se souvenir de moi</span>
+                        </div>
+                </div>
+                <div class="my-5 col-md-4">
+                    <button id="submitConnexion" class="btn btn-primary" type="button">Se connecter</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
